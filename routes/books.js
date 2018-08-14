@@ -6,6 +6,7 @@ var connection = requite("../db/mysqlOpr.js");
 router.get('/', function(req, res, next) {
   	connection.query("select * from books",function(err,rows,fileds){
   		console.log(rows);
+  		console.log("大约");
   	})
 });
 
